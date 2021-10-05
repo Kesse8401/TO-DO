@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To Do Agi</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@256;300;400&family=Sigmar+One&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <h1>TO DO LIST</h1>
+    <div id="mainContainer">
+        <div id="myDIV" class="header">
+            <h2>LIST YOUR TASKS BELOW</h2>
+            <input type="text" id="userInput" placeholder="Add your item...">
+            <span onclick="createListElement()" class="addButton"><button id="mainButton">Add task<button</span>
+        </div>
+        <div class="listContainer">
+        <ul id="theList">
+            
+        </ul>   
+        <button onclick="taskRemover()" id='remover'>Remove done tasks</button>
+    </div>
+        <script src="index.js" type="text/javascript"></script>
+    </div>
+</body>
+
+</html>
