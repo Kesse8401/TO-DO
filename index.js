@@ -21,9 +21,9 @@ buttonCheck();
 
 //Function creates and adds a DOM node (li)
 const createListElement = (label = userInput.value) => {
-    let li = document.createElement("li"); // create "li"
-    li.appendChild(document.createTextNode(label)); //makes text from input field the li text
-    theListUL.appendChild(li); //adds li to ul
+    let li = document.createElement("li"); 
+    li.appendChild(document.createTextNode(label)); 
+    theListUL.appendChild(li); 
     userInput.value = ''
     createCheckbox(li);
     buttonCheck();
@@ -78,7 +78,7 @@ fetch(file)
         console.log(err);
     });
 
-// function that creates list element (title of each item) and appends it
+// function that creates lists elements (title of each item) and appends it
 function appendData(data) {
     for (var i = 0; i < data.length; i++) {
         const item = data[i];
@@ -88,4 +88,8 @@ function appendData(data) {
             elementLi.classList.add('strike');
         }
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
